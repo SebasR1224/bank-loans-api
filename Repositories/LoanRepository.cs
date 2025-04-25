@@ -18,6 +18,12 @@ public class LoanRepository : ILoanRepository
         return loan;
     }
 
+    public async Task<IEnumerable<Loan>> GetLoansByCustomerEmailAsync(string customerEmail)
+    {
+        await Task.Delay(1000);
+        return _loans.Where(l => l.Email == customerEmail);
+    }
+
     public async Task<Loan> GetLoanByIdAsync(Guid id)
     {
         await Task.Delay(1000);

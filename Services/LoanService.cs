@@ -17,6 +17,11 @@ public class LoanService(ILoanRepository loanRepository) : ILoanService
         return await loanRepository.GetLoanByIdAsync(id);
     }
 
+    public async Task<IEnumerable<Loan>> GetLoansByCustomerEmailAsync(string customerEmail)
+    {
+        return await loanRepository.GetLoansByCustomerEmailAsync(customerEmail);
+    }
+
     public async Task<IEnumerable<Loan>> GetAllLoansAsync()
     {
         return await loanRepository.GetAllLoansAsync();

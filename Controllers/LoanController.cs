@@ -39,12 +39,18 @@ public class LoanController(ILoanService loanService) : ControllerBase
         return Ok(response);
     }
 
+    [HttpGet("customer/{customerEmail}")]
+    public async Task<IActionResult> GetLoansByCustomerEmail([FromRoute] string customerEmail)
+    {
+        var response = await loanService.GetLoansByCustomerEmailAsync(customerEmail);
+        return Ok(response);
+    }
+
     [HttpPut("{id}/status")]
     public async Task<IActionResult> UpdateStatus([FromRoute] Guid id, [FromBody] LoanStatus status)
     {
         var response = await loanService.UpdateLoanStatusAsync(id, status);
         return Ok(response);
     }
-
 }
 

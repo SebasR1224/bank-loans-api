@@ -40,3 +40,4 @@ E:\Proyectos\BankLoans\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
 E:\Proyectos\BankLoans\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 E:\Proyectos\BankLoans\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 E:\Proyectos\BankLoans\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+E:\Proyectos\BankLoans\obj\Debug\net8.0\BankLoans.sourcelink.json

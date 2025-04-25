@@ -8,4 +8,5 @@ public interface ILoanService
     Task<Loan> GetLoanByIdAsync(Guid id);
     Task<IEnumerable<Loan>> GetAllLoansAsync();
     Task<Loan> UpdateLoanStatusAsync(Guid id, LoanStatus status);
+    Task<IEnumerable<Loan>> GetLoansByCustomerEmailAsync(string customerEmail);
 }
