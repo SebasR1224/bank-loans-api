@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "cvW2ZL9H6bTU2qjwbtPnPA7KvcMg4KA6nj1LhGNCVW0=",
+  "Source": "BankLoans",
+  "BasePath": "_content/BankLoans",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
