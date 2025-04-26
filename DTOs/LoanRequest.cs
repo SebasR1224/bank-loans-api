@@ -13,3 +13,9 @@ public record LoanRequest(
         [EmailAddress(ErrorMessage = "Invalid email format")]
         string Email
 );
+
+public record LoanStatusRequest(
+    [Required(ErrorMessage = "Loan status is required")]
+        string Status
+);
+

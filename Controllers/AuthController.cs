@@ -20,7 +20,7 @@ public class AuthController(IAuthService authService) : ControllerBase
             return Unauthorized();
 
         var token = authService.GenerateJwtToken(user);
-        return Ok(new LoginResponse(token, new UserResponse(user.Id, user.Email, user.Role)));
+        return Ok(new LoginResponse(token, new UserResponse(user.Id, user.Email, user.Name, user.Role)));
     }
 }
 
